@@ -1,5 +1,7 @@
 # wpa-quiz
-QUIZ generujący quiz na podstawie pliku z pytaniami.
+Mały skrypt, który pomaga przygotować się do egzaminu teoretycznego pozwolenia na broń, które są organizowane przez WPA Policji.
+
+Można wygenerować pliki z odpowiedziami. Przy dostarczeniu klucza odpowiedzi, zostanie to sprawdzone.
 
 # Plik z pytaniami
 Plik należy wziąć ze strony WPA, zapisać jako zwykły plik txt.
