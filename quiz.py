@@ -278,6 +278,13 @@ def weighted_random_selection(pool, stats, count):
     """
     new_ones   = [q for q in pool if q not in stats]
     others     = [q for q in pool if q     in stats]
+    random.shuffle(new_ones)  # LOSOWANIE nowego zbioru
+
+    # Jeśli całkowicie nie ma statystyk — wybierz losowo
+    if len(others) == 0:
+        return random.sample(new_ones, count)
+
+    random.shuffle(others)  # LOSOWANIE nowego zbioru
 
     selected=[]
 
@@ -553,17 +560,20 @@ def main():
 
     print(f"\nWYNIK: {score}/{len(user_answers)} poprawnych.\n")
 
-    # STATYSTYKI
+    # --- aktualizacja statystyk ---
     if not no_stats:
-        for qnum,ans in user_answers.items():
-            g,b = stats.get(qnum,(0,0))
-            if ans in user_key[qnum]:
-                g+=1
-            else:
-                b+=1
-            stats[qnum]=(g,b)
-        save_stats(stats_path,stats)
+        for qnum, ans in user_answers.items():
+            good, bad = stats.get(qnum, (0, 0))
 
+            # qnum to numer pytania z pliku źródłowego (OK!)
+            if qnum in user_key and ans in user_key[qnum]:
+                good += 1
+            else:
+                bad += 1
+
+            stats[qnum] = (good, bad)
+
+    save_stats(stats_path, stats)
 
 if __name__=="__main__":
     main()
