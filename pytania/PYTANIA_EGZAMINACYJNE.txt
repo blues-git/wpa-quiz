@@ -56,31 +56,29 @@ art. 16 ust. 1 ustawy z dnia 21 maja 1999 r. o broni i amunicji.
     14. Dokonywanie przeróbek broni zmieniających jej rodzaj, kaliber lub przeznaczenie, bez wymaganego zezwolenia, jest: (art. 6 ust. 2 uobia)
         a. dozwolone wyłącznie wówczas, gdy posiadacz pozwolenia na broń  jest uprawniony do posiadania również broni, która powstanie po przeróbce;
         b. zabronione;
-        c. dozwolone wyłącznie wówczas, gdy zezwala na to specyfikacja techniczna broni,                        a dokonana przeróbka nie wpłynie na bezpieczeństwo podczas używania broni.
+        c. dozwolone wyłącznie wówczas, gdy zezwala na to specyfikacja techniczna broni, a dokonana przeróbka nie wpłynie na bezpieczeństwo podczas używania broni.
     15. Bronią palną, w rozumieniu ustawy o broni i amunicji, jest: (art. 7 ust. 1 uobia)
         a. broń lufowa, która jest przenośna;
         b. broń lufowa, która jest stacjonarna;
         c. odpowiedzi a. i b. są prawidłowe.
     16. Bronią palną, w rozumieniu ustawy o broni i amunicji, jest: (art. 7 ust. 1 uobia)
-        a. broń, która jest przystosowana do miotania jednego lub większej liczby pocisków                     w wyniku działania sprężonego gazu;
-        b. broń, która jest przystosowana do miotania jednego lub większej liczby pocisków                      w wyniku działania materiału miotającego;
-        c. broń, która jest przystosowana do miotania jednego lub większej liczby pocisków                     w wyniku działania energii elektrycznej.
+        a. broń, która jest przystosowana do miotania jednego lub większej liczby pocisków w wyniku działania sprężonego gazu;
+        b. broń, która jest przystosowana do miotania jednego lub większej liczby pocisków w wyniku działania materiału miotającego;
+        c. broń, która jest przystosowana do miotania jednego lub większej liczby pocisków w wyniku działania energii elektrycznej.
     17. Bronią palną, w rozumieniu ustawy o broni i amunicji nie jest: (art. 7 ust. 1 uobia):
         a. strzebla gładkolufowa;
         b. karabinek pneumatyczny;
         c. pistolet sygnałowy.
     18. Bronią palną sygnałową, w rozumieniu ustawy o broni i amunicji, jest urządzenie
 wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających
-na skutek spalania materiału miotającego, jest zdolne do wystrzelenia substancji w postaci ładunku pirotechnicznego celem wywołania efektu wizualnego lub akustycznego z lufy                   o kalibrze: (art. 7 ust. 2 uobia)
+na skutek spalania materiału miotającego, jest zdolne do wystrzelenia substancji w postaci ładunku pirotechnicznego celem wywołania efektu wizualnego lub akustycznego z lufy o kalibrze: (art. 7 ust. 2 uobia)
         a. nie mniejszym niż 25 mm;
         b. nie mniejszym niż 12 mm;
         c. nie mniejszym niż 6 mm.
     19. Bronią palną alarmową, w rozumieniu ustawy o broni i amunicji, jest: (art. 7 ust. 3 uobia)
-        a. urządzenie wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających na skutek spalania materiału miotającego, wywołuje efekt wizualny,
-a wystrzelona z lufy lub elementu ją zastępującego substancja razi cel na odległość nie większą niż 2 metry;
-        b. urządzenie wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających na skutek spalania materiału miotającego, wywołuje efekt wizualny                    i akustyczny, a wystrzelona z lufy lub elementu ją zastępującego substancja razi cel na odległość nie większą niż 3 metry;
-        c. urządzenie wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających na skutek spalania materiału miotającego, wywołuje efekt akustyczny,
-a wystrzelona z lufy lub elementu ją zastępującego substancja razi cel na odległość nie większą niż 1 metr.
+        a. urządzenie wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających na skutek spalania materiału miotającego, wywołuje efekt wizualny, a wystrzelona z lufy lub elementu ją zastępującego substancja razi cel na odległość nie większą niż 2 metry;
+        b. urządzenie wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających na skutek spalania materiału miotającego, wywołuje efekt wizualny i akustyczny, a wystrzelona z lufy lub elementu ją zastępującego substancja razi cel na odległość nie większą niż 3 metry;
+        c. urządzenie wielokrotnego użycia, które w wyniku działania sprężonych gazów, powstających na skutek spalania materiału miotającego, wywołuje efekt akustyczny, a wystrzelona z lufy lub elementu ją zastępującego substancja razi cel na odległość nie większą niż 1 metr.
     20. Bronią pneumatyczną, w rozumieniu ustawy o broni i amunicji, jest: (art. 8 uobia)
         a. urządzenie zdolne do rażenia celów na odległość, pociskiem wystrzeliwanym z lufy lub elementu ją zastępującego z energią kinetyczną przekraczającą 17 J;
         b. urządzenie zdolne do rażenia celów na odległość, pociskiem wystrzeliwanym z lufy lub elementu ją zastępującego z energią kinetyczną przekraczającą 15 J;
@@ -198,8 +196,7 @@ a wystrzelona z lufy lub elementu ją zastępującego substancja razi cel na odl
         b. strzelba gładkolufowa posiadająca więcej niż jedną lufę;
         c. broń palna, której nie można wykryć przy pomocy urządzeń przeznaczonych do kontroli osób i bagażu.
     49. Amunicją szczególnie niebezpieczną, w rozumieniu ustawy o broni i amunicji jest: (art. 10 ust. 6 uobia)
-        a. amunicja z pociskami pełnopłaszczowymi zawierającymi rdzeń wykonany
-z materiału twardszego niż stop ołowiu;
+        a. amunicja z pociskami pełnopłaszczowymi zawierającymi rdzeń wykonany z materiału twardszego niż stop ołowiu;
         b. amunicja z pociskami wypełnionymi materiałami wybuchowymi, zapalającymi albo innymi substancjami, których działanie zagraża życiu lub zdrowiu oraz pociski do takiej amunicji;
         c. odpowiedź a. i b. są prawidłowe.
     50. Posiadanie amunicji wytworzonej niefabrycznie, w tym takiej, do której wytworzenia wykorzystywane są fabrycznie nowe elementy amunicji, na własny użytek jest: (art. 10 ust. 6 uobia)
