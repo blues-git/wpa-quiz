@@ -36,12 +36,6 @@ Opcje:
   --browse      | -b           tryb przeglądania (od razu pokazuje wynik pytania)
   --no-stats    | -S           wyłącza system statystyk
 
-Działanie:
-  - pytania na czystym ekranie
-  - wyróżnienie treści, nie nawiasów (art…)
-  - q / quit przerywa quiz natychmiast
-  - po quizie: zapis odpowiedzi t/n/q
-  - plik statystyk: PLIK_PYTAN.stats
 """)
 
 
