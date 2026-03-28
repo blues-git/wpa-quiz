@@ -502,7 +502,6 @@ def main():
         s=input("\nZapisać odpowiedzi do pliku? (t/n): ").strip().lower()
         if s in ("t","n","q"):
             break
-        print("Wpisz t / n / q.")
 
     if s=="t":
         fname=input("Nazwa pliku: ").strip()
