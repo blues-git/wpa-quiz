@@ -35,7 +35,6 @@ Opcje:
   --verify=CSV  | -v CSV       porównanie user.csv z master.csv
   --browse      | -b           tryb przeglądania (od razu pokazuje wynik pytania)
   --no-stats    | -S           wyłącza system statystyk
-
 """)
 
 
@@ -451,7 +450,7 @@ def main():
             qtext, answers = questions[qnum]
             core, law = split_question_text(qtext)
 
-            print(f"{qnum}.  {BOLD}{core}{RESET} {law}\n")
+            print(f"{qnum}.  {BOLD}{core}{RESET}\n{law}\n")
             for letter,text in answers:
                 print(f"  {BOLD}{letter}){RESET} {text}")
 
