@@ -499,14 +499,11 @@ def main():
 
     # zapisywanie odpowiedzi do pliku:
     while True:
-        s=input("\nZapisać odpowiedzi do pliku? (t/n/q): ").strip().lower()
+        s=input("\nZapisać odpowiedzi do pliku? (t/n): ").strip().lower()
         if s in ("t","n","q"):
             break
         print("Wpisz t / n / q.")
 
-    if s=="q":
-        print("\nPrzerwano.\n")
-        return
     if s=="t":
         fname=input("Nazwa pliku: ").strip()
         if fname:
@@ -515,7 +512,7 @@ def main():
                     f.write(f"{q},{a}\n")
             print("Zapisano.")
         else:
-            print("Anulowano zapis.")
+            print("Brak zapisu.")
 
     # --- aktualizacja statystyk ---
     if not no_stats:
