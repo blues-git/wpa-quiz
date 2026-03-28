@@ -478,6 +478,25 @@ def main():
 
     # druk wyników
     clear_screen()
+    if not user_key:
+        return
+
+    print("\n=== OCENA ===\n")
+    score=0
+    for qnum,ans in sorted(user_answers.items()):
+        if qnum not in user_key:
+            print(f"[{qnum}] brak w kluczu.")
+            continue
+
+        correct=user_key[qnum]
+        if ans in correct:
+            print(f"[{qnum}] {GREEN}✔ ({ans}) poprawnie{RESET}")
+            score+=1
+        else:
+            print(f"[{qnum}] {RED}✘ ({ans}) → poprawne: {sorted(correct)}{RESET}")
+
+    print(f"\nWYNIK: {score}/{len(user_answers)} poprawnych.\n")
+
     # zapisywanie odpowiedzi do pliku:
     while True:
         s=input("\nZapisać odpowiedzi do pliku? (t/n/q): ").strip().lower()
@@ -497,26 +516,6 @@ def main():
             print("Zapisano.")
         else:
             print("Anulowano zapis.")
-
-    # OCENA
-    if not user_key:
-        return
-
-    print("\n=== OCENA ===\n")
-    score=0
-    for qnum,ans in sorted(user_answers.items()):
-        if qnum not in user_key:
-            print(f"[{qnum}] brak w kluczu.")
-            continue
-
-        correct=user_key[qnum]
-        if ans in correct:
-            print(f"[{qnum}] {GREEN}✔ ({ans}) poprawnie{RESET}")
-            score+=1
-        else:
-            print(f"[{qnum}] {RED}✘ ({ans}) → poprawne: {sorted(correct)}{RESET}")
-
-    print(f"\nWYNIK: {score}/{len(user_answers)} poprawnych.\n")
 
     # --- aktualizacja statystyk ---
     if not no_stats:
