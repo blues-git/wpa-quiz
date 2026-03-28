@@ -439,12 +439,7 @@ def main():
     stats = {} if no_stats else load_stats(stats_path)
 
     # LOSOWANIE
-    if browse:
-        # w trybie browse kolejność = normalne losowanie wg statystyk
-        selected = weighted_random_selection(pool, stats, count)
-    else:
-        # egzamin normalny
-        selected = weighted_random_selection(pool, stats, count)
+    selected = weighted_random_selection(pool, stats, count)
 
     user_answers={}
     correct_count=0
