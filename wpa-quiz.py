@@ -233,7 +233,7 @@ def save_stats(stats_path, stats_dict):
 
 
 # =====================================================================
-# WAGA PYTANIA (wg Twojego algorytmu)
+# WAGA PYTANIA
 # =====================================================================
 
 def compute_question_weight(good, bad):
@@ -445,54 +445,7 @@ def main():
     correct_count=0
 
     # =================================================================
-    # TRYB PRZEGLĄDANIA (natychmiastowa odpowiedź)
-    # =================================================================
-    if browse:
-        for qnum in selected:
-            clear_screen()
-
-            qtext, answers = questions[qnum]
-            core, law = split_question_text(qtext)
-
-            print(f"{qnum}.  {BOLD}{core}{RESET}\n{law}\n")
-            for letter,text in answers:
-                print(f"  {BOLD}{letter}){RESET} {text}")
-
-            ans=input("\nOdpowiedź (a/b/c lub q): ").strip().lower()
-            if ans in ("q","quit"):
-                print("\nPrzerwano.\n")
-                break
-
-            user_answers[qnum]=ans
-
-            if qnum in user_key and ans in user_key[qnum]:
-                print(f"{GREEN}✔ Poprawnie!{RESET}")
-                correct_count+=1
-            else:
-                print(f"{RED}✘ Błąd.{RESET}")
-                if qnum in user_key:
-                    print(f"Poprawne: {sorted(user_key[qnum])}")
-
-            input("\nENTER aby kontynuować...")
-
-        # aktualizacja statystyk
-        if not no_stats:
-            for qnum,ans in user_answers.items():
-                g,b = stats.get(qnum,(0,0))
-                if qnum in user_key and ans in user_key[qnum]:
-                    g+=1
-                else:
-                    b+=1
-                stats[qnum]=(g,b)
-            save_stats(stats_path,stats)
-
-        total = len(user_answers)
-        print(f"\nWYNIK: {correct_count}/{total} poprawnych.\n")
-        return
-
-
-    # =================================================================
-    # TRYB EGZAMINOWY
+    # TRYB EGZAMINOWY/BROWSE
     # =================================================================
     for qnum in selected:
         clear_screen()
@@ -511,15 +464,23 @@ def main():
 
         user_answers[qnum]=ans
 
+        # pokaż wynik od razu w trybie browse:
+        if browse:
+            if qnum in user_key and ans in user_key[qnum]:
+                print(f"{GREEN}✔ Poprawnie!{RESET}")
+                correct_count+=1
+            else:
+                print(f"{RED}✘ Błąd.{RESET}")
+                if qnum in user_key:
+                    print(f"Poprawne: {sorted(user_key[qnum])}")
+
+            input("\nENTER aby kontynuować...")
+
     # druk wyników
     clear_screen()
-    print("=== TWOJE ODPOWIEDZI ===\n")
-    for q,a in sorted(user_answers.items()):
-        print(f"{q},{a}")
-
-    # zapisywanie t/n/q
+    # zapisywanie odpowiedzi do pliku:
     while True:
-        s=input("\nZapisać odpowiedzi? (t/n/q): ").strip().lower()
+        s=input("\nZapisać odpowiedzi do pliku? (t/n/q): ").strip().lower()
         if s in ("t","n","q"):
             break
         print("Wpisz t / n / q.")
