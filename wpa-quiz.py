@@ -365,12 +365,13 @@ def main():
     # statystyki
     stats_path=base+".stats"
 
-    # OPCJE
+    # OPCJE - wartości domyślne
     user_key={}
     count=20
     ranges=None
-    browse=False
+    browse=True
     no_stats=False
+    exam=False
 
     args=sys.argv[2:]
     for i,arg in enumerate(args):
@@ -409,6 +410,14 @@ def main():
 
         elif arg=="-S":
             no_stats=True
+
+        elif arg == "--exam":
+            browse = False
+            exam = True
+
+        elif arg == "-e":
+            browse = False
+            exam = True
 
     # auto-detect CSV
     if not user_key and os.path.exists(auto_csv):
