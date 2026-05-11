@@ -526,7 +526,8 @@ def main():
 
             stats[qnum] = (good, bad)
 
-    save_stats(stats_path, stats)
+        save_stats(stats_path, stats)
+
 
 if __name__=="__main__":
     main()
